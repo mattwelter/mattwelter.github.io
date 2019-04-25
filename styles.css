@@ -326,7 +326,7 @@ nav a:not(.current):hover {
 	color: #34526F;
 }
 
-@media (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 	.viewondesktop {
 		display: block;
 	}
