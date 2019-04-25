@@ -21,7 +21,7 @@ main {
 	top: 0px;
 }
 
-.rotateyourdevice {
+.viewondesktop {
 	display: none;
 	margin: 0 auto;
 	position: fixed;
@@ -31,10 +31,10 @@ main {
 	background-color: #fafafa;
 }
 
-.rotateyourdevice p {
+.viewondesktop p {
 	font-family: 'Museo-Sans', Helvetica, Arial, sans-serif;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 20px;
 	color: #333;
 	line-height: 1.6em;
 	text-align: center;
@@ -327,13 +327,14 @@ nav a:not(.current):hover {
 }
 
 @media (orientation: portrait) {
-	.rotateyourdevice {
+	.viewondesktop {
 		display: block;
 	}
 }
 
 /* iPhone 5, Galaxy S5 */
-@media only screen and (min-width: 481px) and (max-width: 640px) and (orientation: landscape) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+/*
+@media only screen and (min-width: 481px) and (max-width: 640px) and (orientation: landscape) { 
   	  .floatright {
 		position: static;
 		overflow: scroll;
@@ -409,9 +410,10 @@ nav a:not(.current):hover {
 		display: none;
 	}
 }
-
+*/
 /* iPhone X, 8, 7, 6, Pixel 2, Pixel XL */
-@media only screen and (min-width:641px) and (max-width: 960px) and (orientation: landscape) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+/*
+@media only screen and (min-width:641px) and (max-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
   	  .floatright {
 		position: static;
 		overflow: scroll;
@@ -482,9 +484,10 @@ nav a:not(.current):hover {
 		display: none;
 	}
 }
-
+*/
 /* iPad */
-@media only screen and (min-width:961px) and (max-width: 1024px) and (orientation: landscape) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+/*
+@media only screen and (min-width:961px) and (max-width: 1024px) and (orientation: landscape) {
   	  .floatright {
 		position: static;
 		overflow: scroll;
@@ -536,9 +539,10 @@ nav a:not(.current):hover {
 		display: none;
 	}
 }
-
+*/
 /* iPad Pro */
-@media only screen and (min-width:1025px) and (max-width: 1367px) and (orientation: landscape) { /* big landscape tablets, laptops, and desktops */ 
+/*
+@media only screen and (min-width:1025px) and (max-width: 1367px) and (orientation: landscape) { 
   	.floatright {
 		position: static;
 		overflow: scroll;
@@ -593,7 +597,7 @@ nav a:not(.current):hover {
 		display: none;
 	}
 }
-
+*/
 /* Fonts */
 /* latin-ext */
 @font-face {
