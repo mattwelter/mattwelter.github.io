@@ -330,11 +330,17 @@ nav a:not(.current):hover {
 	.viewondesktop {
 		display: block;
 	}
+	main {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 961px) {
 	.viewondesktop {
 		display: block;
+	}
+	main {
+		display: none;
 	}
 }
 
