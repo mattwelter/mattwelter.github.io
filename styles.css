@@ -94,7 +94,7 @@ main {
 	margin-left: 100%;
 	padding-left: 250px;
 	padding-bottom: 50px;
-	top: -128px;
+	top: -106px;
 	background-color: #fbfbfb;
 	color: #3c3c3c;
 	z-index: -500;
@@ -107,7 +107,7 @@ main {
 section {
 	display: block;
 	text-align: left;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 .myname {
@@ -130,8 +130,18 @@ section {
 }
 
 .link:hover {
-	color: blue;
-	border-bottom: 4px solid blue;
+	background-image: -webkit-linear-gradient(left,#333,#d92680,#26d9d9,#6226d9,#d92680,#333);
+	-webkit-background-size: 2400% 2400%;
+	-moz-background-size: 2400%;
+	-o-background-size: 2400%;
+	background-size: 2400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-animation: color_hover 120s linear infinite;
+	-o-animation: color_hover 120s linear infinite;
+	animation: color_hover 120s linear infinite;
+	-webkit-animation: color_hover 120s linear infinite;
+	border-bottom: 4px solid linear-gradient(left,#333,#d92680,#26d9d9,#6226d9,#d92680,#333);
 }
 
 #skill1:hover, #skill2:hover, #skill3:hover {
@@ -233,7 +243,7 @@ nav {
 	letter-spacing: 0.8px;
 	width: 410px;
 	position: absolute;
-	top: 17%;
+	top: 15%;
 	left: -150px;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -248,7 +258,7 @@ nav ul {
 
 nav li {
 	display: inline;
-	padding-right: 12px;
+	padding-right: 16px;
 }
 
 nav a {
@@ -297,7 +307,7 @@ nav a:not(.current):hover {
 .social-container {
 	font-size: 72px;
 	position: absolute;
-	top: 5%;
+	top: 6%;
 	left: 400%;
 }
 
@@ -323,6 +333,10 @@ nav a:not(.current):hover {
 
 .fa-tumblr:hover {
 	color: #34526F;
+}
+
+.fa-envelope:hover {
+	opacity: 0.8;
 }
 
 @media only screen and (orientation: portrait) {
