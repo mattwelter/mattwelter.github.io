@@ -41,7 +41,6 @@ main {
 	position: fixed;
 	top: 45%;
 	width: 100%;
-	text-transform: lowercase;
 	letter-spacing: 0px;
 	background-image: -webkit-linear-gradient(left,#333,#d92680,#26d9d9,#6226d9,#d92680,#333);
 	-webkit-background-size: 2400% 2400%;
