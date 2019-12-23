@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-size: 12px !important;
 }
 
 #wrapper {
@@ -200,7 +201,7 @@ MAIN BODY
 }
 
 .project-links {
-	margin-left: 50px;
+	margin-left: 36px;
 }
 
 .descfix {
