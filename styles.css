@@ -9,22 +9,6 @@
 	margin-top: 34px;
 }
 
-#projects-content {
-	display: none;
-	margin-bottom: -30px !important;
-}
-
-#education-content {
-	display: none;
-	margin-left: 25px !important;
-	margin-bottom: 20px !important;
-}
-
-#photography-content {
-	display: none;
-	margin-left: 25px !important;
-}
-
 body {
 	font-family: 'Menlo', sans-serif;
 	font-weight: 300;
@@ -65,13 +49,24 @@ header p {
 	font-style: italic;
 }
 
-#introparagraph {
-	margin-top: 18px;
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 }
 
-#hsam {
-	margin: -10px 0px 0px 25px;
-	height: 275px;
+#introparagraph {
+	grid-row: 1;
+	grid-column: 1;
+	padding-left: 285px;
+	padding-top: 35px;
+}
+
+#portrait {
+	height: 250px;
+	grid-row: 1;
+	grid-column: 1;
+    padding-right: 35px;
 }
 
 
@@ -117,12 +112,6 @@ nav a:visited {
 	color: black;
 }
 
-/*
-nav a:hover {
-	padding-bottom: 2px;
-	border-bottom: 2px solid black;
-}
-*/
 nav ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -198,14 +187,6 @@ MAIN BODY
 	background: inherit;
 	color: inherit;
 	margin: -6px 0px -6px 36px;
-}
-
-.project-links {
-	margin-left: 36px;
-}
-
-.descfix {
-	margin: 6px 0px -6px 36px;
 }
 
 .biggeremoji {
