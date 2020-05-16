@@ -7,6 +7,7 @@
 	width: calc(100% - 100px);
 	margin: 0 auto;
 	margin-top: 190px;
+	margin-bottom: 100px;
 }
 
 body {
@@ -51,6 +52,7 @@ header p {
 
 .flex {
 	display: flex;
+	flex-wrap: wrap !important;
 }
 
 #about-section {
@@ -169,10 +171,6 @@ nav ul {
 	margin: 0 auto;
 	display: block;
 	max-width: 1500px;
-	padding-top: 100px;
-}
-
-#artwork-title {
 }
 
 #artwork-content {
@@ -185,13 +183,67 @@ nav ul {
 	padding: 2vw 1vw 0px 1vw;
 }
 
+#video-container {
+	margin-top: -25px;
+	margin: 0 auto;
+	display: block;
+	max-width: 1500px;
+}
 
+#video-content {
+	margin-left: -8px;
+}
+
+.video-span img {
+	width: 41.4vw;
+	position: relative;
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 0.5px 1px 0.5px 0px;
+}
+
+.video-span {
+	padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 10px;
+    position: relative;
+	display: inline-block;
+}
+
+.video-span:hover span, .video-span:hover span {
+	display: block;
+	width: 29vw;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 6% 0% -9% 0%;
+    transition: all .4s ease;
+}
+
+.video-span:hover img, .video-span:hover img {
+	opacity: 0.2;
+	transition: all .4s ease;
+}
+
+.video-span span {
+	display: none;
+	padding-top: 22%;
+	padding-left: 34%;
+	font-size: 1.4em !important;
+}
 
 #photo-container {
 	margin-top: -25px;
 	margin: 0 auto;
 	display: block;
 	max-width: 1500px;
+	padding-top: 100px;
 }
 
 #photo-content {
@@ -351,6 +403,19 @@ MAIN BODY
 	#artwork-container {
 		padding-top: 50px;
 	}
+	.video-span img {
+		width: 85vw;
+	}
+	.video-span {
+		padding-top: 25px;
+	    padding-left: 25px;
+	    padding-right: 10px;
+	}
+	.video-span span {
+		width: 700px !important;
+		padding-top: 20%;
+   		padding-left: 41%;
+	}
 }
 
 
@@ -365,11 +430,24 @@ MAIN BODY
 	.photo-span:hover span {
 		margin: 6% 0% -9% 17%;
 	}
+	.video-span img {
+		width: 92vw;
+	}
+	.video-span {
+		padding-top: 30px;
+    	padding-left: 10px;
+	}
+	.video-span span {
+		width: 700px !important;
+		padding-top: 22%;
+   		padding-left: 32%;
+	}
 }
 
 @media screen and (max-width: 1024px) {
 	#wrapper {
 		width: 100%;
+		margin-bottom: 40px;
 	}
 	#artwork-content img, #photo-content img {
 		width: 49vw;
@@ -381,9 +459,31 @@ MAIN BODY
 		font-size: 4vw !important;
 		padding-bottom: 10px;
 	}
+	.video-span img {
+		width: 96vw;
+	}
+	.video-span {
+		padding-top: 20px;
+	    padding-left: 20px;
+	    padding-right: 10px;
+	}
+	.video-span span {
+		width: 700px !important;
+		padding-top: 18%;
+   		padding-left: 32%;
+	}
 }
-
+@media screen and (max-width: 900px) {
+	.video-span span {
+		width: 700px !important;
+		padding-top: 18%;
+   		padding-left: 22%;
+	}
+}
 @media screen and (max-width: 800px) {
+	#wrapper {
+		margin-bottom: 20px;
+	}
 	body {
 		margin: 0px;
 	}
@@ -399,11 +499,34 @@ MAIN BODY
 		padding-bottom: 20px;
 		padding-left: 10px;
 	}
+	.video-span img {
+		width: 99vw;
+	}
+	.video-span {
+		padding-top: 10px;
+	    padding-left: 12px !important;
+	    padding-right: 0px !important; 
+	}
+	.video-span span {
+		width: 700px !important;
+		padding-top: 18%;
+   		padding-left: 6%;
+	}
 }
-
+/*
+@media screen and (max-width: 700px) {
+	.video-span span {
+		width: 700px !important;
+		padding-top: 18%;
+   		padding-left: 0;
+   		padding-right: 8%;
+	}
+}
+*/
 @media screen and (max-width: 600px) {
 	#wrapper {
 		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	#artwork-content img, #photo-content img {
 		width: 100vw;
@@ -413,10 +536,39 @@ MAIN BODY
 		margin: 1% 0% -9% 37%;
 		width: 110px;
 	}
+	#video-container {
+		display: none;
+	}
+	/*
+	.video-span img {
+		width: 100vw;
+		border: none;
+	}
+	.video-span {
+		padding-top: 0px;
+	    padding-left: 10px !important;
+	    padding-right: 0px !important; 
+	}
+	.video-span span {
+		width: 700px !important;
+		padding-top: 18%;
+   		padding-left: 0;
+   		padding-right: 14%;
+	}
+	.video-span span, .photo-span span {
+		display: none !important;
+	}
+	.video-span:hover img, .video-span:hover img {
+		opacity: 1 !important;
+	}
+	*/
 	.section-title {
 		font-size: 10vw !important;
 		padding-bottom: 20px;
 		padding-left: 10px;
+	}
+	#photo-container {
+		padding-top: 0px;
 	}
 	#about-section {
 		margin-top: 0px;
@@ -457,6 +609,11 @@ MAIN BODY
 @media screen and (max-width: 485px) {
 	#about-section span {
 		margin-left: 6%;
+	}
+	.video-span {
+		padding-top: 0px;
+	    padding-left: 10px !important;
+	    padding-right: 0px !important; 
 	}
 }
 @media screen and (max-width: 475px) {
