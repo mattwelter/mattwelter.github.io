@@ -179,7 +179,7 @@ nav ul {
 }
 
 #artwork-content img, #photo-content img {
-	width: 29vw;
+	width: 500px;
 	padding: 2vw 1vw 0px 1vw;
 }
 
@@ -195,7 +195,7 @@ nav ul {
 }
 
 .video-span img {
-	width: 41.4vw;
+	width: 714px;
 	position: relative;
     display: inline-block;
     border: 1px solid grey;
@@ -372,11 +372,23 @@ MAIN BODY
 
 
 
+@media screen and (min-width: 1681px) {
+	.section-title {
+		font-size: 52px !important;
+	}
+	.photo-span:hover span, .photo-span:hover span {
+		width: 540px;
+	}
+}
 
-
-
-
-
+@media screen and (max-width: 1680px) {
+	#artwork-content img, #photo-content img {
+	    width: 29vw;
+	}
+	.video-span img {
+		width: 41.1vw;
+	}
+}
 @media screen and (max-width: 1400px) {
 	#wrapper {
 		margin-top: 120px;
